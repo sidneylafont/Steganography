@@ -16,10 +16,6 @@ def main():
         print("message is too long, needs to be less than 1000 characters")
         return
 
-    if messageLength > len(ary):
-        print("message is too long for the image")
-        return
-
     charToInt = {}
 
     index = 0
