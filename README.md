@@ -1,6 +1,6 @@
 # Steganography
 
-A basic Steganographer, meaning it hides messages (up to 1000 characters) in images
+A basic Steganographer, meaning it hides messages (up to 1000000 characters) in images
 
 to encode a message using terminal:
 
