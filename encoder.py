@@ -12,7 +12,7 @@ def main():
     chars = string.printable
     messageLength = len(hiddenText)
 
-    if messageLength > 999:
+    if messageLength > 999999:
         print("message is too long, needs to be less than 1000 characters")
         return
 
@@ -33,11 +33,12 @@ def main():
             if ind == -1:
                 messageLengthStr = str(messageLength)
                 messageLengthArr = list(messageLengthStr)
-                for i in range(0, 3 - len(messageLengthArr)):
+                for i in range(0, 6 - len(messageLengthArr)):
                     messageLengthArr.insert(0, "0")
+                messageLengthArrSize3 = [messageLengthArr[0] + messageLengthArr[1],  messageLengthArr[2] + messageLengthArr[3], messageLengthArr[4] + messageLengthArr[5]]
                 for n in range(0, 3):
-                    rem = np.mod(y[n], 10)
-                    y[n] = y[n] - rem + int(messageLengthArr[n])
+                    rem = np.mod(y[n], 100)
+                    y[n] = y[n] - rem + int(messageLengthArrSize3[n])
             elif ind < messageLength:
                 intToHide = textToInt[ind]
                 intToHideStr = str(intToHide)

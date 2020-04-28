@@ -26,7 +26,7 @@ def main():
             if ind == -1:
                 lengthStr = ""
                 for n in y:
-                    lengthStr += str(n)[len(str(n)) - 1]
+                    lengthStr += str(n)[len(str(n)) - 2:len(str(n))]
                 messageLength = int(lengthStr)
             elif ind < messageLength:
                 intToDecode = ""
