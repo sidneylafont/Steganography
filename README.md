@@ -21,7 +21,7 @@ This will print the hidden message
 For example to hide the message "Steganography is cool" in pre1.jpg:
 
         $ cd Steganography
-        $ python encoder.py images/pre1.jgp "Steganography is cool"
+        $ python encoder.py images/pre1.jpg "Steganography is cool"
         
 Then to decode that message:
 
@@ -30,8 +30,8 @@ Then to decode that message:
 
 # Packages
 
-*Pillow (PIL)
-*numpy
-*sys
-*string
+- Pillow (PIL)
+- numpy
+- sys
+- string
 
