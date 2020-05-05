@@ -28,10 +28,13 @@ Then to decode that message:
         $ cd Steganography
         $ python decoder.py images/post.png
         
-Below are the images pre and post encoding (they look like the exact same picture):
+Below are the images pre and post encoding:
 
 ![pre1.jpg](/images/pre1.jpg)
 ![post.png](/images/post.png)
+
+They look like the exact same picture, yet the second one has the message "Steganography is really really cool"
+hidden in it.
 
 # Packages
 
